@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* Variables y fuentes */
+@font-face{
+    font-family: "fuente1";
+    src: url("../fonts/oswald/static/Oswald-SemiBold.ttf");
+}
+@font-face{
+    font-family: "fuente2";
+    src: url("../fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf");
+}
+@font-face{
+    font-family: "fuente3";
+    src: url("../fonts/Spline_Sans_Mono/static/SplineSansMono-Regular.ttf");
+}
+
+/* Estilos web */
+:root{
+  --color0: White;
+  --color1: Red;
+  --color2: Grey;
+  --color3: Yellow;
+  --fuente1: "fuente1";
+  --fuente2: "fuente2";
+  --fuente3: "fuente3";
+}
+h1{
+    color: var(--color1);
+}
+
+nav,header,main,footer{
+   width: 100%; 
+   max-width: 2560px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+
+}
+/* Estilos del Nav */
+nav .sup{
+    width: 100%;
+    height: 5vh;
+    max-height: 40px;
+    background-color: var(--color0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: center;
+    position: relative;
+}
+nav .sup img{
+    height: 70px;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+}
+nav .inf{
+    width: 100%;
+    height: 5vh;
+    max-height: 40px;
+    background-color: var(--color0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: center;
+}
+nav .inf ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    list-style: none; 
+    column-gap: 4rem;
+   }
+nav .inf a{
+   text-decoration: none; 
+}
+nav .inf a:visited{
+    color: black;
+}
+nav .inf a:hover{
+    color: blue;
+    font-weight: bold;
+}
+
+/* Estilos del Header */
+header{
+    height: 90vh;
+    background-image: url("../img/header_2560.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+   
+}
