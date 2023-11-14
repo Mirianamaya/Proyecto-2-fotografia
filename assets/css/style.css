@@ -1,3 +1,4 @@
+/* Estilos genericos */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@
 }
 @font-face{
     font-family: "fuente2";
-    src: url("../fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf");
+    src: url("../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
 }
 @font-face{
     font-family: "fuente3";
@@ -22,15 +23,61 @@
 /* Estilos web */
 :root{
   --color0: White;
-  --color1: Red;
+  --color1: rgb(54, 54, 54);
   --color2: Grey;
-  --color3: Yellow;
+  --color3: rgb(255, 255, 0);
   --fuente1: "fuente1";
   --fuente2: "fuente2";
   --fuente3: "fuente3";
+
+  font-family: var(--fuente2);
 }
 h1{
     color: var(--color1);
+    font-size: 1.4rem;
+    font-family: var(--fuente1);
+
+}
+h2{
+    color: var(--color2);
+    font-size: 1.8rem;
+    font-family: var(--fuente2);
+    font-weight: 100;
+}
+h3{
+    color: var(--color1);
+    font-size: 2rem;
+    font-family: var(--fuente2);
+    font-weight: 100;
+}
+h4{
+    font-size: 1.2rem;   
+    font-family: var(--fuente3);
+    color: var(--color2);
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+}
+.boton{
+    background-color:rgb(127, 193, 255);
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color1);
+}
+
+.boton:hover{
+    background-color: var(--color2);
+    border-color: var(--color0);
+    color: var(--color0);
+    transition: 0.5s;
+}
+.boton:active{
+    transform:scale(0.9);
+    transition: 0.1s;
 }
 
 nav,header,main,footer{
@@ -98,4 +145,110 @@ header{
     background-attachment: fixed;
     
    
+}
+header .contenedor{
+    /* background-color: aquamarine; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 2px;
+    font-family: var(--fuente1);
+    user-select: none;
+    color: var(--color0);
+
+}
+header .contenedor :nth-child(1){
+    font-size: 7.8vw;
+    line-height: 7.2vw;
+}
+header .contenedor :nth-child(2){
+    font-size: 5.1vw;
+    line-height: 4vw;
+}
+header .contenedor :nth-child(3){
+    font-size: 12.5vw;
+    line-height: 10.3vw;
+}
+header .contenedor :nth-child(4){
+    font-size: 4.1vw;
+    line-height: 3.7vw;
+}
+header .contenedor :nth-child(5){
+    font-size: 8.1vw;
+    line-height: 6vw;
+}
+header .contenedor :nth-child(6){
+    font-size: 6.1vw;
+    line-height: 5.3vw;
+}
+header .contenedor :nth-child(7){
+    font-size: 16.5vw;
+    line-height: 15vw;
+}
+header .contenedor :nth-child(8){
+    font-size: 3vw;
+    line-height: 2vw;
+}
+/* MAIN */
+/* ID SECTPRESENTACION */
+#sectpresentacion{
+    background-color: fuchsia;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+#sectpresentacion article{
+    background-color: blueviolet;
+    max-width: 1200px;
+    width: 95%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
+}
+#contenedorservicios{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+#contenedorservicios .servicio{
+    background-color: bisque;
+    width: 100%;
+    max-width: 550px;
+    min-width: 320px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1rem;
+}
+#contenedorservicios .servicio .contenedor_foto{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+#contenedorservicios .servicio .contenedor_foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter:saturate(0);
+    transition: 1s;
+}
+#contenedorservicios .servicio .contenedor_foto img:hover{
+    filter: saturate(1);
+    transform:scale(1.2);
 }
