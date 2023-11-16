@@ -17,16 +17,17 @@
         </div>
         <div class="inf">
             <ul>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Quienes somos</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#hitoServicios">Servicios</a></li>
+                <li><a href="#hitoAlbum">Album</a></li>
+                <li><a href="#hitoEquipo">Quienes somos</a></li>
+                <li><a href="#hitoContacto">Contacto</a></li>
             </ul>
 
         </div>
 
     </nav>
     <header>
-        <!-- <div class="contenedor">
+        <div class="contenedor">
             <p>LA FOTOGRAFÍA</p>
             <P>ES EL UNICO Y GENUINO</P>
             <P>LENGUAJE</P>
@@ -35,12 +36,14 @@
             <P>EN TODO EL AMPLIO</P>
             <P>MUNDO</P>
             <p>-Bruno Barbey-</p>
-        </div> -->
+        </div>
     </header>
-    <main>
-        <section id="sectpresentacion">
+    <div id="hitoServicios"></div>
+    <main>       
+        <!-- SECCION SERVICIOS -->
+        <section>
         <h2>Nuestros servicios fotograficos</h2>
-        <article>
+        <article class=""anchoEstrecho">
             <h3>TUS FOTOGRAFOS EN DONOSTI</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error <b>saepe facere</b> inventore in sit asperiores soluta labore assumenda ducimus impedit, officiis voluptatibus dignissimos modi et, sapiente esse ipsum culpa quam!</p>
             <p></p>
@@ -48,7 +51,7 @@
                 Contactar
             </div>
         </article>
-        <article>
+        <article class=""anchoEstrecho">
             <h3>SOMOS UN EQUIPO DE FOTOGRAFOS PROFESIONALES EN DONOSTIA</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, debitis!</p>
             <div id="contenedorservicios">
@@ -98,7 +101,32 @@
             </div>
         </article>
         </section>
+
+        <!-- SLIDER ALBUM -->
+        <section>
+           <div id="hitoAlbum"></div>
+           <h2>Albumes fotograficos a medida</h2>
+           <article>
+                <div id="slider">
+                    <img id="flechaIzd" src="./assets/img/flecha_izd.png" alt="">
+                    <img id="flechaDer" src="./assets/img/flecha_der.png" alt="">
+                    <img id="fotoActiva" orden="1" src="./assets/img/slider1_2560.jpg" alt="">                
+                </div>
+                <h3 class="anchoEstrecho">El mejor album fotografico para recordar los momentos mas especiales</h3>
+                <p class="anchoEstrecho">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error aperiam porro consequatur quibusdam obcaecati quaerat voluptate consequuntur eveniet. Aperiam ex assumenda ratione natus maiores numquam provident vel eos harum ad!</p>
+           </article>
+        </section>
+
+        <!-- EQUIPO -->
+        <section>
+
+        </section>
             
     </main>
+    <footer>
+
+    </footer>
+    <!-- <script src="./assets/js/slider.js"></script> -->
+    <!-- <script src="./assets/js/avatares.js"></script> -->
 </body>
 </html>
