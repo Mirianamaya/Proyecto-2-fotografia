@@ -2,7 +2,7 @@
 
 var numFotos = 12; /* El slider tendrá 12 fotos */
 var ordenPrincipal, ordenSiguiente;
-var intervalo, temporizador;
+var intervalo;
 var tiempoEspera = 5000; /* (milisegundos = 5 segundos) */
 /* var numAleatorio; */
 
@@ -37,8 +37,7 @@ flechaIzd.addEventListener("click", function(){
     fotoActiva.src=`./assets/img/slider${ordenSiguiente}_2560.jpg`;
     fotoActiva.setAttribute("orden", ordenSiguiente);
     
-    clearInterval(intervalo);
-    crearIntervalo();
+    crearIntervalo(tiempoEspera + 2000);
         
     })
    
@@ -61,8 +60,7 @@ flechaDer.addEventListener("click", function(){
     fotoActiva.src=`./assets/img/slider${ordenSiguiente}_2560.jpg`;
     fotoActiva.setAttribute("orden", ordenSiguiente);
 
-    clearInterval(intervalo);
-    crearIntervalo();
+    crearIntervalo(tiempoEspera + 2000);
    
 })
 /* IMAGEN RANDOM */
@@ -90,19 +88,21 @@ function funcion_random(){
     numAleatorio = Math.random() * numFotos;
     numAleatorio = Math.ceil (numAleatorio);
     fotoActiva.src=`./assets/img/slider${numAleatorio}_2560.jpg`;
-fotoActiva.setAttribute("orden",numAleatorio);
+    fotoActiva.setAttribute("orden",numAleatorio);
 }
+
+
 /* CAMBIO AUTOMATICO DE IMAGENES CADA X SEGUNDOS */
-
-function crearIntervalo(){
+function crearIntervalo(valorRecibido){
+    if(intervalo != undefined){
+        clearInterval(intervalo)
+    }
     
-    
-    intervalo = window.setInterval(funcion_random,5000);
-
-
+    intervalo = window.setInterval(funcion_random,valorRecibido);
 }
 
-crearIntervalo();
+funcion_random();
+crearIntervalo(tiempoEspera);
 
-/* Esta simple sentencia, por si sola, sin llamar a ninguna funcion cambiaria la foto activa cada 5 sg*/
+/* Esta simple sentencia, por si sola, sin llamar a ninguna funcion cambiaria la foto activa cada 5 sg pero nosotros lo vamos a meter en la variable intervalo para poder borrarlo cuando se ejecuten los listeners de las flechas y así parar el tiempo de espera*/
 /* window.setInterval(funcion_random,5000); */
