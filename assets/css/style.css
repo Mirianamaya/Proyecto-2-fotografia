@@ -362,53 +362,76 @@ header .contenedor :nth-child(8){
     transform:rotate(40deg);
     transition: 1s;  
 }
+/* Estilos FOOTER */
 
 footer{
     width: 100%;
     background-color: var(--color2);
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    color:var(--color0);
+    font-family: var(--font1);
+    padding: 4rem 0;
 }
 #ContentFooter{
     width: 100%;
-    max-width: 2560 px;
+    max-width: 2560px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: flex-start;
+    row-gap: 2rem;
 }
 #LogoFooter{
-    width: 300 px;
-
+    width: 150 px;
 }
-
 #AbajoFooter{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: flex-start;
-    row-gap: 1rem;
-    
+    row-gap: 0.1rem; 
 }
 #AbajoFooter p{
     font-size: 1rem;
 }
 #SupFooter{
     width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
-
-}
-#SupFootwer .infoSupFooter{
+    }
+#SupFooter .infoSupFooter{
     width: 30%;
     min-width: 300px;
-    height:400 px;
     background-color: aquamarine;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
+    
+}
+#SupFooter .infoSupFooter img{
+    width: 100%;
+    background-color: whitesmoke;
+}
+#SupFooter .infoSupFooter ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+#SupFooter .infoSupFooter ul li a{
+    color: var(--color0);
+    text-decoration: none;
+    font-weight: 100;
+    
 }
