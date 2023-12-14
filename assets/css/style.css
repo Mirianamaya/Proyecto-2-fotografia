@@ -26,7 +26,7 @@
   --color0: White;
   --color1: rgb(42, 42, 42);
   --color2: Grey;
-  --color3: rgb(255, 255, 0);
+  --color3: #b94747;
   --fuente1: "fuente1";
   --fuente2: "fuente2";
   --fuente3: "fuente3";
@@ -368,13 +368,14 @@ footer{
     width: 100%;
     background-color: var(--color2);
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     padding: 2rem;
     color:var(--color0);
     font-family: var(--font1);
     padding: 4rem 0;
+    row-gap: 2rem;
 }
 #ContentFooter{
     width: 100%;
@@ -384,6 +385,9 @@ footer{
     align-items: center;
     justify-items: flex-start;
     row-gap: 2rem;
+}
+#ContentFooter >img{
+    width: 150px;
 }
 #LogoFooter{
     width: 150 px;
@@ -414,15 +418,12 @@ footer{
     background-color: aquamarine;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    row-gap: 2rem;
+    row-gap: 2rem;   
     
 }
-#SupFooter .infoSupFooter img{
-    width: 100%;
-    background-color: whitesmoke;
-}
+
 #SupFooter .infoSupFooter ul{
     list-style: none;
     display: flex;
@@ -433,5 +434,65 @@ footer{
     color: var(--color0);
     text-decoration: none;
     font-weight: 100;
-    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 2rem;
+   
+}
+
+#SupFooter .infoSupFooter ul li a:hover{
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(38%) sepia(11%) saturate(2641%) hue-rotate(313deg) brightness(99%) contrast(105%);
+}
+.iconos_contacto{
+    width: 20px;
+    filter:invert(1);
+}
+#contenedor_rrss{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4rem;
+
+}
+#contenedor_rrss img{
+    width: 40px;
+}
+
+#contenedor_form{
+    width: 100%;
+    max-width: 2560px;
+    height: 400px;
+    background-color: aquamarine;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+}
+footer form{
+    width: 40%;
+    min-width: 320px;
+    max-width: 800px;
+    background-color: bisque;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+footer form input,textarea{
+    width: 100%;
+}
+#boton_enviar{
+    width: 10%;
+    min-width: 160px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
