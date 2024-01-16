@@ -1,5 +1,10 @@
 <?php
-ini_set('display_errors', 1);
+
+include_once "./includes/_config.php";
+include_once "./class/_comprobaciones.php";
+
+$comprobaciones = new clase_comprobaciones;
+
 
 /* recoger datos y comprobar */
 $destino = "mirianamaya@gmail.com";/* correo del admin */
@@ -26,7 +31,7 @@ $cabecera = 'From info@webda.eus'."\r\n".
 /* 9-enviar correos de confirmacion*/
 mail($destino,"Consulta de la web", $contenido,$cabecera); /* correo que recibo yo */
 
-mail($correo,"Hemos recibiido tu consulta",$contenido,$cabecera); /* correo que recibe el cliente */
+mail($correo,"Hemos recibido tu consulta",$contenido,$cabecera); /* correo que recibe el cliente */
 
 /* 10-redirigir a gracias*/
 header("location:../index.html?enviado=correo enviado!");
