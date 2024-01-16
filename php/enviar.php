@@ -19,8 +19,8 @@ $datetime = date("Y-m-d H:i:s");
 /* mensaje concatenado para enviar por correo*/
 $contenido = "fecha de envío: ".$datetime."\nIP: ".$ip."\nNombre: ".$nombre."\nCorreo: ".$correo."\nTelefono: ".$telefono."\nMensaje: ".$mensaje;
 
-$cabecera = 'From mirianamaya@gmail.com'."\r\n".
-'Reply-To: mirianamaya@gmail.com'."\r\n".
+$cabecera = 'From info@webda.eus'."\r\n".
+/* 'Reply-To: info@webda.eus'."\r\n". */
 'X-Mailer: PHP/'.phpversion();
 
 /* 9-enviar correos de confirmacion*/
