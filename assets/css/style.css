@@ -225,7 +225,8 @@ nav .inf ul li a:hover{
         font-size: 1.5rem;
     }
     nav .inf ul li a{
-        font-size: 2rem ;
+        font-size: 2rem;
+        text-decoration: none;
     }
     #toggle:checked ~ .contenedor_span span:nth-last-child(1){
         transform: rotate(-45deg) translate(-1px, 0px);
@@ -268,35 +269,35 @@ header .contenedor{
 
 }
 header .contenedor :nth-child(1){
-    font-size: 7.9vw;
-    line-height: 7.6vw;
+    font-size: 5.2vw;
+    line-height: 5vw;
 }
 header .contenedor :nth-child(2){
-    font-size: 5vw;
-    line-height: 4.8vw;
+    font-size: 3.4vw;
+    line-height: 3vw;
 }
 header .contenedor :nth-child(3){
-    font-size: 12.5vw;
-    line-height: 11.3vw;
+    font-size: 8.2vw;
+    line-height: 8vw;
 }
 header .contenedor :nth-child(4){
-    font-size: 4.1vw;
-    line-height: 3.7vw;
+    font-size: 2.7vw;
+    line-height: 2.3vw;
 }
 header .contenedor :nth-child(5){
-    font-size: 8.1vw;
-    line-height: 7.5vw;
+    font-size: 5.4vw;
+    line-height: 5vw;
 }
 header .contenedor :nth-child(6){
-    font-size: 6.1vw;
-    line-height: 5.5vw;
+    font-size: 4.1vw;
+    line-height: 4vw;
 }
 header .contenedor :nth-child(7){
-    font-size: 16.5vw;
-    line-height: 14vw;
+    font-size: 10.9vw;
+    line-height: 10vw;
 }
 header .contenedor :nth-child(8){
-    font-size: 3vw;
+    font-size: 2vw;
     line-height: 2vw;
 }
 /* MAIN */
@@ -578,13 +579,30 @@ footer form{
 }
 footer form input,textarea{
     width: 100%;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    font-family: var(--fuente2);
 }
+footer form textarea{
+    height: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 200px;
+    min-height: 100px;
+}
+footer form input{
+    height: 2rem;
+
+}
+
 #boton_enviar{
     width: 10%;
     min-width: 160px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+
+    padding: inherit;
 
 }
 
