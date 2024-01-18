@@ -162,17 +162,34 @@
         </section>
             
     </main>
+    <div id="hitoContacto"></div>
     <footer>        
         <div id="contenedor_form">
-            <form action="./php/enviar.php" method="post">
+            <!-- <form action="./php/enviar.php" method="post">
+                <h2>Contacta con nosotros</h2>
+                <input type="text" name="nombre" minlength="4" maxlength="40" placeholder="Nombre (mínimo 4 carac.)" required>
+                <input type="email" name="correo" maxlength="100" placeholder="Correo">
+                <input type="tel" name="Telefono" placeholder="Telefono">
+                <textarea name="mensaje" minlength="10" maxlength="500" placeholder="Escriba aquí su mensaje"></textarea>
+                <input type="submit" class="boton" id="boton_enviar" value="ENVIAR"> 
+            </form> -->
+
+            <!-- <form action="./php/enviar2.php" method="post">
                 <h2>Contacta con nosotros</h2>
                 <input type="text" name="nombre" minlength="4" maxlength="40" placeholder="Nombre (mínimo 4 carac.)" required>
                 <input type="email" name="correo" maxlength="100" placeholder="Correo">
                 <input type="tel" name="Telefono" placeholder="Telefono">
                 <textarea name="mensaje" minlength="10" maxlength="500" placeholder="Escriba aquí su mensaje"></textarea>
                 <input type="submit" class="boton" id="boton_enviar" value="ENVIAR">
-                
+            </form> -->
 
+            <form action="./php/enviar_phpMailer.php" method="post">
+                <h2>Contacta con nosotros</h2>
+                <input type="text" name="nombre" minlength="4" maxlength="40" placeholder="Nombre (mínimo 4 carac.)" required>
+                <input type="email" name="correo" maxlength="100" placeholder="Correo">
+                <input type="tel" name="telefono" placeholder="Telefono">
+                <textarea name="mensaje" minlength="10" maxlength="500" placeholder="Escriba aquí su mensaje"></textarea>
+                <input type="submit" class="boton" id="boton_enviar" value="ENVIAR">
             </form>
             <img src="./assets/img/header_800.jpg" alt="">
         </div>

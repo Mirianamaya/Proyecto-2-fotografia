@@ -1,10 +1,5 @@
 <?php
 
-include_once "./includes/_config.php";
-include_once "./class/_comprobaciones.php";
-
-$comprobaciones = new clase_comprobaciones;
-
 
 /* recoger datos y comprobar */
 $destino = "mirianamaya@gmail.com";/* correo del admin */
