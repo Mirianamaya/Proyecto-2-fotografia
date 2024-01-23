@@ -109,7 +109,6 @@ nav,header,main,footer{
    flex-direction: column;
    justify-content: flex-start;
    align-items: flex-start;
-
 }
 
 section, article{
@@ -134,9 +133,6 @@ article{
 #toggle, .contenedor_span{
 display:none;
 }
-
-
-
 /* Nav */
 nav{
     position: fixed;
