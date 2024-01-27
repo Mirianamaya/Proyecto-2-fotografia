@@ -18,7 +18,7 @@
 }
 @font-face{
     font-family: "fuente3";
-    src: url("../fonts/Spline_Sans_Mono/static/SplineSansMono-Regular.ttf");
+    src: url("../fonts/Spline_Sans_Mono/SplineSansMono-VariableFont_wght.ttf");
 }
 
 /* Estilos web */
@@ -248,16 +248,15 @@ nav .inf ul li a:hover{
 /* Estilos del Header */
 header{
     margin-top: 70px;
-    height: 90vh;
+    height: 95vh;
     background-image: url("../img/header_2560.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+    transform: translateY(80px);    
    
 }
 header .contenedor{
-    /* background-color: aquamarine; */
     width: 500px;
     display: flex;
     flex-direction: column;
